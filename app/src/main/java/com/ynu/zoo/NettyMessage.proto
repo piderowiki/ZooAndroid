@@ -1,0 +1,14 @@
+syntax = "proto3"; // 版本
+package proto;
+option java_package = "com.ynu.zoo.VO"; // 指定生成到哪个包下
+option java_outer_classname = "NettyMessagePOJO"; // 生成的外部类名,也是文件名
+
+message NettyMessage{
+  int32 messageType = 1;
+  string messageBody = 2;
+  string sender = 6;
+  int32  roomID = 7;
+  int32 parameter1 = 3;
+  int32 parameter2 = 4;
+  string parameter3 = 5;
+}
